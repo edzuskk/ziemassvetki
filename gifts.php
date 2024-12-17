@@ -6,6 +6,8 @@ $gifts = $db->query("SELECT * FROM gifts")->fetchAll();
 
 echo "<ol>";
 foreach($gifts as $post){
-echo "<li>" . $post["name"] . "  " . $post["count_available"] . "</li>";
+echo "<li>" . 
+$post["name"] . "  " . 
+$post["count_available"] . "</li>";
 }
 echo "</ol>";
